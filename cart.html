@@ -1,0 +1,32 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EcoThriftCart • Cart</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head><body>
+<header class="site-header">
+  <a class="logo" href="index(1)(2).html">
+    <img src="https://cdn.discordapp.com/attachments/1413712734574481471/1413735601366372412/image.png?ex=68bd0361&is=68bbb1e1&hm=6fc3548cd71baf0067005f7d55fdbc80cfacfcae37843cae932e67df11297aba">
+    <span>EcoFinds</span>
+  </a>
+  <nav class="nav">
+    <a  href="shop.html">Buy</a>
+    <a  href="sell.html">Sell</a>
+    <a class="active" href="cart.html">Cart</a>
+  </nav>
+  <div class="auth-links" id="authLinks"></div>
+</header>
+<section class="form-wrap">
+  <h2>Your Cart</h2>
+  <div id="cartList" class="grid"></div>
+  <div class="card">
+    <div class="row">
+      <strong>Total: ₹<span id="cartTotal">0</span></strong>
+      <button class="btn primary" id="checkoutBtn">Checkout</button>
+    </div>
+  </div>
+</section>
+<footer class="site-footer"><p>Cart demo — no real payments</p></footer>
+<script src="app.js"></script>
+<script>EcoUI.renderAuthLinks(); EcoCart.init();</script>
+</body></html>
