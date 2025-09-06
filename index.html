@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>EcoFinds • Sustainable Second‑Hand Marketplace</title>
+  <title>EcoThriftCart • Sustainable Second‑Hand Marketplace</title>
   <link rel="stylesheet" href="style.css"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,23 +11,22 @@
 </head>
 <body>
   <header class="site-header">
-    <a class="logo" href="index.html">
+    <a class="logo" href="index(1)(2).html">
       <img src="https://cdn.discordapp.com/attachments/1413712734574481471/1413735601366372412/image.png?ex=68bd0361&is=68bbb1e1&hm=6fc3548cd71baf0067005f7d55fdbc80cfacfcae37843cae932e67df11297aba" 
-           onerror="this.onerror=null;this.src='assets/hero-2.png';" alt="EcoFinds Logo">
-      <span>EcoFinds</span>
+           onerror="this.onerror=null;this.src='assets/hero-2.png';" alt="EcoThriftCart Logo">
+      <span>EcoThriftCart</span>
     </a>
     <nav class="nav">
       <a href="shop.html">Buy</a>
       <a href="sell.html">Sell</a>
-      <a href="shop.html#finder">Bike Finder</a>
-      <a href="articles.html" class="muted">Articles</a>
+      <a  href="cart.html">Cart</a>
     </nav>
     <div class="auth-links" id="authLinks"></div>
   </header>
 
   <section class="hero" style="--hero:url('assets/hero-1.png')">
     <div class="hero-inner">
-      <h1>Buy & Sell with confidence.</h1>
+      <h1>Buy & Sell with Eco.</h1>
       <p>Real market data and trusted protection for every sustainable transaction.</p>
       <div class="search-row">
         <input id="homeSearch" type="search" placeholder="Search 'Trek Madone' or 'Dining Table'"/>
@@ -49,9 +48,6 @@
   </section>
 
   <footer class="site-footer">
-    <p>© <span id="y"></span> EcoFinds • Built for your hackathon prototype.</p>
+    <p>© <span id="y"></span> EcoThriftCart • Built for your hackathon prototype.</p>
   </footer>
   <script src="app.js"></script>
-  <script>document.getElementById('y').textContent=new Date().getFullYear(); EcoUI.renderAuthLinks();</script>
-</body>
-</html>
