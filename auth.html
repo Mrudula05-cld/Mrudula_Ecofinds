@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoFinds • Sign In / Sign Up</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="site-header">
+  <a class="logo" href="index.html">
+    <img src="https://cdn.discordapp.com/attachments/1413712734574481471/1413735601366372412/image.png?ex=68bd0361&is=68bbb1e1&hm=6fc3548cd71baf0067005f7d55fdbc80cfacfcae37843cae932e67df11297aba" 
+         onerror="this.onerror=null;this.src='assets/hero-2.png';" alt="EcoFinds Logo">
+    <span>EcoFinds</span>
+  </a>
+</header>
+
+<section class="form-wrap">
+  <div class="card form">
+    <h2 id="modeTitle">Create your account</h2>
+    <label>Email<input id="email" type="email" required></label>
+    <label>Password<input id="password" type="password" minlength="4" required></label>
+    <label>Username<input id="username" placeholder="Display name" required></label>
+    <button class="btn primary" id="submitBtn">Sign Up</button>
+    <p class="muted" id="toggleRow">Already have an account? <a href="#" id="toggle">Log in</a></p>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <p>Prototype auth uses local storage and is for demo only.</p>
+</footer>
+
+<script src="app.js"></script>
+<script>EcoAuth.init();</script>
+</body>
+</html>

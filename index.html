@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EcoFinds • Sustainable Second‑Hand Marketplace</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">
+      <img src="https://cdn.discordapp.com/attachments/1413712734574481471/1413735601366372412/image.png?ex=68bd0361&is=68bbb1e1&hm=6fc3548cd71baf0067005f7d55fdbc80cfacfcae37843cae932e67df11297aba" 
+           onerror="this.onerror=null;this.src='assets/hero-2.png';" alt="EcoFinds Logo">
+      <span>EcoFinds</span>
+    </a>
+    <nav class="nav">
+      <a href="shop.html">Buy</a>
+      <a href="sell.html">Sell</a>
+      <a href="shop.html#finder">Bike Finder</a>
+      <a href="articles.html" class="muted">Articles</a>
+    </nav>
+    <div class="auth-links" id="authLinks"></div>
+  </header>
+
+  <section class="hero" style="--hero:url('assets/hero-1.png')">
+    <div class="hero-inner">
+      <h1>Buy & Sell with confidence.</h1>
+      <p>Real market data and trusted protection for every sustainable transaction.</p>
+      <div class="search-row">
+        <input id="homeSearch" type="search" placeholder="Search 'Trek Madone' or 'Dining Table'"/>
+        <button onclick="window.location.href='shop.html?q='+encodeURIComponent(document.getElementById('homeSearch').value)">Search</button>
+      </div>
+      <div class="cta-row">
+        <a class="btn primary" href="shop.html">Shop Now</a>
+        <a class="btn" href="sell.html">Sell your item</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="trust">
+    <div class="trust-grid">
+      <div><h3>Simple</h3><p>Create listings in seconds. Add a photo, set a price, and you're live.</p></div>
+      <div><h3>Secure</h3><p>Basic authentication and local-first storage keep your data on your device.</p></div>
+      <div><h3>Sustainable</h3><p>Extend product lifecycles and reduce waste with every transaction.</p></div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>© <span id="y"></span> EcoFinds • Built for your hackathon prototype.</p>
+  </footer>
+  <script src="app.js"></script>
+  <script>document.getElementById('y').textContent=new Date().getFullYear(); EcoUI.renderAuthLinks();</script>
+</body>
+</html>

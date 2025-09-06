@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoFinds • Shop</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="site-header">
+  <a class="logo" href="index.html">
+    <img src="https://cdn.discordapp.com/attachments/1413712734574481471/1413735601366372412/image.png?ex=68bd0361&is=68bbb1e1&hm=6fc3548cd71baf0067005f7d55fdbc80cfacfcae37843cae932e67df11297aba" 
+         onerror="this.onerror=null;this.src='assets/hero-2.png';" alt="EcoFinds Logo">
+    <span>EcoFinds</span>
+  </a>
+  <nav class="nav">
+    <a class="active" href="shop.html">Buy</a>
+    <a href="sell.html">Sell</a>
+  </nav>
+  <div class="auth-links" id="authLinks"></div>
+</header>
+
+<section class="subhero" style="--hero:url('assets/hero-3.png')">
+  <div class="subhero-inner">
+    <h2>Discover pre-loved gems</h2>
+    <p id="finder">Search, filter, sort, or group by category.</p>
+    <div class="controls">
+      <input id="q" type="search" placeholder="Search...">
+      <select id="filterCategory">
+        <option value="">All Categories</option>
+        <option>Cycles</option>
+        <option>Electronics</option>
+        <option>Furniture</option>
+        <option>Books</option>
+        <option>Clothing</option>
+        <option>Other</option>
+      </select>
+      <select id="sortBy">
+        <option value="new">Newest</option>
+        <option value="low">Price: Low → High</option>
+        <option value="high">Price: High → Low</option>
+      </select>
+      <select id="groupBy">
+        <option value="">Group: None</option>
+        <option value="category">Group by Category</option>
+        <option value="seller">Group by Seller</option>
+      </select>
+    </div>
+  </div>
+</section>
+
+<main class="grid" id="list"></main>
+
+<footer class="site-footer">
+  <p>Don’t see what you want? <a href="sell.html">List an item</a> or <a href="auth.html">sign in</a> to manage your listings.</p>
+</footer>
+
+<script src="app.js"></script>
+<script>
+EcoUI.renderAuthLinks();
+EcoShop.init();
+</script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoFinds • Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="site-header">
+  <a class="logo" href="index.html">
+    <img src="https://cdn.discordapp.com/attachments/1413712734574481471/1413735601366372412/image.png?ex=68bd0361&is=68bbb1e1&hm=6fc3548cd71baf0067005f7d55fdbc80cfacfcae37843cae932e67df11297aba" 
+         onerror="this.onerror=null;this.src='assets/hero-2.png';" alt="EcoFinds Logo">
+    <span>EcoFinds</span>
+  </a>
+  <div class="auth-links" id="authLinks"></div>
+</header>
+
+<section class="form-wrap">
+  <div class="card form">
+    <h2>Profile</h2>
+    <label>Username<input id="dashUsername"></label>
+    <label>Email<input id="dashEmail" disabled></label>
+    <div class="row">
+      <button class="btn primary" id="saveProfile">Save</button>
+      <a class="btn" href="sell.html">Add Listing</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Your Listings</h3>
+    <div id="myListings" class="grid"></div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <p>Manage your profile and listings.</p>
+</footer>
+
+<script src="app.js"></script>
+<script>
+EcoUI.requireAuth();
+EcoUI.renderAuthLinks();
+EcoDash.init();
+</script>
+</body>
+</html>
